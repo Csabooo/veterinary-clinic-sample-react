@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "alice";
+  src: url("./assets/fonts/Alice-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-alice;
+  }
+}
