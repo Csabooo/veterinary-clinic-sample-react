@@ -9,8 +9,48 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /*   --primary-color: #a7bbec;
+ */
+  /*   --primary-color: #705d56;
+ */
+  --primary-color: #503b31;
+  --secondary-color: #000;
+}
+
 @layer base {
   body {
-    @apply font-alice;
+    @apply font-alice text-primary-color;
+  }
+
+  h1 {
+    @apply text-5xl font-extrabold pt-3;
+  }
+
+  h2 {
+    @apply text-xl font-extrabold;
+  }
+
+  p {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  video {
+    position: absoulte;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   }
 }

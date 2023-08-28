@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         alice: ["alice", "ui-serif"],
       },
+      colors: {
+        "primary-color": "var(--primary-color)",
+        "secondary-color": "var(--secondary-color)",
+      },
     },
   },
   plugins: [],
