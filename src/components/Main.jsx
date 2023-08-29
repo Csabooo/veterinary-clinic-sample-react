@@ -1,4 +1,5 @@
 import React from 'react'
+import video720p from "../assets/pexels-tima-miroshnichenko-6235183 (720p).mp4";
 
 function Main() {
     return (
@@ -12,7 +13,7 @@ function Main() {
                     <p className='pt-[34em]'>Our veterinary professionals work with you as a team to provide the optimal treatment for your pet. Through compassion and dedication, we are committed to furthering the betterment of animals in Hungary and beyond.</p>
                 </div>
             </div>
-            <video className="flex z-0" src="src\assets\pexels-tima-miroshnichenko-6235183 (720p).mp4" muted loop autoPlay></video>
+            <video className="flex z-0" src={video720p} muted loop autoPlay></video>
         </div>
 
     )
