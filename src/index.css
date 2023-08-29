@@ -10,12 +10,8 @@
 @tailwind utilities;
 
 :root {
-  /*   --primary-color: #a7bbec;
- */
-  /*   --primary-color: #705d56;
- */
   --primary-color: #503b31;
-  --secondary-color: #000;
+  --secondary-color: #c5dff8;
 }
 
 @layer base {
@@ -33,6 +29,10 @@
 
   p {
     @apply font-bold;
+  }
+
+  ul li {
+    @apply pt-10;
   }
 }
 
@@ -52,5 +52,19 @@
 
   .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+
+  .showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .showcase.active {
+    right: 150px;
   }
 }

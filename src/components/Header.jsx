@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 
 
-function Header() {
+function Header(props) {
 
     const [isValid, setValid] = useState(false);
 
     const buttonHandler = () => {
         setValid((prevState) => !prevState);
+
     };
 
+    props.onSaveState(isValid);
     let hamburgerMenu = (
-        <button className="" onClick={buttonHandler}>
+        <button onClick={buttonHandler}>
             <span className="material-symbols-outlined flex flex-col justify-center">
                 menu
             </span>
@@ -20,17 +22,20 @@ function Header() {
 
     if (isValid) {
         hamburgerMenu = (
-            <button className="hamburger xl:hidden " onClick={buttonHandler}>
-                <span class="material-symbols-outlined flex flex-col justify-center" >
-                    close
-                </span >
+            <div>
+                <button onClick={buttonHandler} >
+                    <span className="material-symbols-outlined flex flex-col justify-center" >
+                        close
+                    </span >
+                </button >
 
-            </button >
+            </div >
         )
     }
 
+
     return (
-        <div className='absolute w-screen flex align-middle justify-between z-30 pl-3 pr-5'>
+        <div className='absolute w-screen flex align-middle justify-between top-0 pl-3 pr-5 z-30' >
             <nav className=''>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="50" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" xmlSpace="preserve" fill="#503b31">
                     <g id="XMLID_2_">
@@ -56,15 +61,14 @@ function Header() {
 		C340.4,187.6,343.4,173.2,339.8,157.9z"/>
                     </g>
                 </svg>
-
-
-
             </nav>
 
             <p className="flex flex-col justify-center">Fluffy Veterinary Clinic</p>
+
             {hamburgerMenu}
+
         </div>
     )
 }
 
-export default Header
+export default Header;
