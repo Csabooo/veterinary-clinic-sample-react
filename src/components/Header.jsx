@@ -10,8 +10,8 @@ function Header() {
     };
 
     let hamburgerMenu = (
-        <button onClick={buttonHandler}>
-            <span class="material-symbols-outlined flex flex-col justify-center">
+        <button className="" onClick={buttonHandler}>
+            <span className="material-symbols-outlined flex flex-col justify-center">
                 menu
             </span>
         </button>
