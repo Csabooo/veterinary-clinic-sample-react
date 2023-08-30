@@ -41,7 +41,7 @@
     position: absoulte;
     left: 0;
     top: 0;
-    width: 100vw;
+    min-width: 100vw;
     height: 100vh;
     object-fit: cover;
   }
@@ -64,6 +64,7 @@
     align-items: center;
     transition: 0.5s;
   }
+
   .showcase.active {
     right: 150px;
   }

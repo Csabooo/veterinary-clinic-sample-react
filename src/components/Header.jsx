@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 
+
+
 function Header(props) {
 
     const [isValid, setValid] = useState(false);
@@ -9,8 +11,8 @@ function Header(props) {
         setValid((prevState) => !prevState);
 
     };
-
     props.onSaveState(isValid);
+
     let hamburgerMenu = (
         <button onClick={buttonHandler}>
             <span className="material-symbols-outlined flex flex-col justify-center">
