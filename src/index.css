@@ -10,7 +10,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #765827;
+  --primary-color: #3f2305;
   --secondary-color: #c5dff8;
 }
 
@@ -20,15 +20,15 @@
   }
 
   h1 {
-    @apply text-4xl font-extrabold pt-3;
+    @apply text-4xl font-extrabold pt-1;
   }
 
   h2 {
-    @apply text-base font-extrabold;
+    @apply text-sm font-extrabold;
   }
 
   p {
-    @apply font-bold text-base;
+    @apply font-bold text-sm;
   }
 
   ul li {
