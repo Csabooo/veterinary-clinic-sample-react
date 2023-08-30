@@ -24,7 +24,7 @@
   }
 
   h2 {
-    @apply text-lg font-extrabold;
+    @apply text-base font-extrabold;
   }
 
   p {

@@ -26,7 +26,7 @@ function Header(props) {
         hamburgerMenu = (
             <div>
                 <button onClick={buttonHandler} >
-                    <span className="material-symbols-outlined flex flex-col justify-center" >
+                    <span className="material-symbols-outlined flex flex-col justify-center pt-3" >
                         close
                     </span >
                 </button >

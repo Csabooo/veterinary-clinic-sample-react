@@ -5,7 +5,7 @@ function Main() {
     return (
         <div className="">
             <div className="showcase absolute min-w-screen min-h-screen flex px-5" >
-                <div className="flex flex-col text-center mx-auto min-h-screen pt-14">
+                <div className="flex flex-col text-center mx-auto min-h-screen pt-10">
                     <h1>Compassion</h1>
                     <h1>Care</h1>
                     <h1>Community</h1>
