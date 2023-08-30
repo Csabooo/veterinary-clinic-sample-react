@@ -14,11 +14,20 @@ function Header(props) {
     props.onSaveState(isValid);
 
     let hamburgerMenu = (
-        <button onClick={buttonHandler}>
-            <span className="material-symbols-outlined flex flex-col justify-center">
-                menu
-            </span>
-        </button>
+        <div>
+            <button className="md:hidden" onClick={buttonHandler}>
+                <span className="material-symbols-outlined flex flex-col justify-center align-items pt-3">
+                    menu
+                </span>
+            </button>
+            <ul className="navMenu hidden md:flex md:align-middle md:h-full">
+                <li>About Us</li>
+                <li>Mission</li>
+                <li>Meet Our Team</li>
+                <li>What We're Doing</li>
+                <li>Service</li>
+            </ul>
+        </div>
     );
 
 
@@ -26,7 +35,7 @@ function Header(props) {
         hamburgerMenu = (
             <div>
                 <button onClick={buttonHandler} >
-                    <span className="material-symbols-outlined flex flex-col justify-center pt-3" >
+                    <span className="material-symbols-outlined flex flex-col justify-center pt-3 md:hidden" >
                         close
                     </span >
                 </button >
@@ -37,9 +46,9 @@ function Header(props) {
 
 
     return (
-        <div className='absolute w-screen flex align-middle justify-between top-0 pl-3 pr-5 z-30' >
-            <nav className=''>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50" height="50" viewBox="0 0 500 500" enableBackground="new 0 0 500 500" xmlSpace="preserve" fill="#3f2305">
+        <div className="absolute flex align-middle justify-between top-0 z-30 mx-auto ">
+            <div className="flex align-middle justify-between w-screen px-5">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35" height="50" viewBox="130 0 280 500" enableBackground="new 0 0 500 500" xmlSpace="preserve" fill="#3f2305">
                     <g id="XMLID_2_">
                         <path id="XMLID_9_" d="M294.5,395.5c-9.4-0.3-17.9-1.4-26.2-3.6c-9.2-2.4-18.6-2.7-28-1.9c-11.5,0.9-22.5,4-33.5,6.8
 		c-11.7,2.9-23.2,2.8-34.3-2.1c-16.9-7.4-27.8-20.1-30-38.5c-2.4-20.6,4.4-38.3,20.4-51.8c7.2-6.1,14.2-12.3,20.4-19.5
@@ -63,12 +72,11 @@ function Header(props) {
 		C340.4,187.6,343.4,173.2,339.8,157.9z"/>
                     </g>
                 </svg>
-            </nav>
 
-            <p className="flex flex-col justify-center">Fluffy Veterinary Clinic</p>
+                <p className="flex flex-col justify-center">Fluffy Veterinary Clinic</p>
 
-            {hamburgerMenu}
-
+                {hamburgerMenu}
+            </div>
         </div>
     )
 }

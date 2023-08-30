@@ -10,6 +10,9 @@ export default {
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
       },
+      transitionProperty: {
+        underline: "underline",
+      },
     },
   },
   plugins: [],

@@ -20,19 +20,27 @@
   }
 
   h1 {
-    @apply text-4xl font-extrabold pt-1;
+    @apply text-4xl font-extrabold pt-1 lg:text-6xl xl:text-8xl;
   }
 
   h2 {
-    @apply text-sm font-extrabold;
+    @apply text-sm font-extrabold lg:text-xl xl:text-2xl;
   }
 
   p {
-    @apply font-bold text-sm;
+    @apply font-bold text-sm lg:text-base xl:text-xl;
   }
 
-  ul li {
-    @apply pt-10;
+  ul.rollMenu li {
+    @apply hover:underline underline-offset-4 decoration-2 transition duration-500 ease-in-out pt-5;
+  }
+
+  ul.navMenu li {
+    @apply text-center pt-10 md:flex md:flex-col md:justify-center md:pt-0 md:text-sm md:font-extrabold md:pl-10 lg:text-lg  xl:text-xl;
+  }
+
+  ul.navMenu li:hover {
+    @apply text-secondary-color transition duration-500 ease-in-out;
   }
 }
 

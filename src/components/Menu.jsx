@@ -4,8 +4,8 @@ function Menu() {
 
     return (
         <div>
-            <div className=" absolute text-center top-0 right-0 w-[150px] -z-10">
-                <ul>
+            <div className="absolute text-center top-0 right-0 w-[150px] -z-10 bg-secondary-color min-h-screen">
+                <ul className='rollMenu'>
                     <li>About Us</li>
                     <li>Mission</li>
                     <li>Meet Our Team</li>
