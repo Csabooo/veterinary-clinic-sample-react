@@ -14,7 +14,7 @@ function Main() {
             </div>
             <p className='absolute w-screen  first-letter:flex bottom-6 text-center px-5'>Our veterinary professionals work with you as a team to provide the optimal treatment for your pet. Through compassion and dedication, we are committed to furthering the betterment of animals in Hungary and beyond.</p>
 
-            <video src={video720p} muted loop autoPlay></video>
+            <video type="video/mp4" src={video720p} playsinline muted loop autoPlay></video>
         </div>
     )
 }
